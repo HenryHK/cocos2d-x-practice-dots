@@ -29,17 +29,17 @@ static struct {
 	{ "NotificationCenterTest", [](CCObject* sender) { runNotificationCenterTest(); }
 	},
 	{ "CCControlButtonTest", [](CCObject *sender){
-		CCControlSceneManager* pManager = CCControlSceneManager::sharedControlSceneManager();
-		CCScene* pScene = pManager->currentControlScene();
-		CCDirector::sharedDirector()->replaceScene(pScene);
+	//	CCControlSceneManager* pManager = CCControlSceneManager::sharedControlSceneManager();
+	//	CCScene* pScene = pManager->currentControlScene();
+	//	CCDirector::sharedDirector()->replaceScene(pScene);
 	}},
 	{ "CocosBuilderTest", [](CCObject *sender) {
-		TestScene* pScene = new CocosBuilderTestScene();
+		/*TestScene* pScene = new CocosBuilderTestScene();
 		if (pScene)
 		{
 			pScene->runThisTest();
 			pScene->release();
-		}
+		}*/
 	}},
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_EMSCRIPTEN)
 	{ "HttpClientTest", [](CCObject *sender){ runHttpClientTest();}

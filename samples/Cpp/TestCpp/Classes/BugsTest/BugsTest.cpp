@@ -8,7 +8,7 @@
 #include "Bug-914.h"
 #include "Bug-1159.h"
 #include "Bug-1174.h"
-
+/*
 #define TEST_BUG(__bug__)									\
 {															\
 	CCScene* pScene = CCScene::create();					\
@@ -17,7 +17,9 @@
 	pScene->addChild(pLayer);                               \
 	CCDirector::sharedDirector()->replaceScene(pScene);     \
 	pLayer->autorelease();                                  \
-}
+}*/
+
+#define TEST_BUG(__bug__)									{}
 
 enum
 {
